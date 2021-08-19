@@ -44,10 +44,9 @@ const themeOptionsWithDefaults = (themeOptions) => {
       ];
 
   return {
-    rehypePlugins,
-    remarkPlugins,
-    gatsbyRemarkPlugins,
     assetPath,
     instances,
   };
 };
+
+export { slugify, mdxResolverPassthrough, themeOptionsWithDefaults };
