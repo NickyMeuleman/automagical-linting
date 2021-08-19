@@ -1,0 +1,22 @@
+// these settings format all file types but js on save with the prettier vscode extension
+// for javascript, prettier is ran through eslint, and on save eslint --fix is ran
+// eslint errors are shown in the editor with the eslint vscode extension, the status is always shown
+{
+  // Format all filetypes on save
+  "editor.formatOnSave": true,
+  // enable prettier as default formatter for all supported filetypes
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // JavaScript specific settings:
+  "[javascript]": {
+    // disable prettier
+    "editor.defaultFormatter": null,
+    // disable formatting on save
+    "editor.formatOnSave": false
+  },
+  // run eslint --fix on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  // always show eslint in the statusbar
+  "eslint.alwaysShowStatus": true
+}
