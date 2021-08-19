@@ -7,7 +7,7 @@ function slugify(str) {
       .replace(/[^a-z0-9]+/g, `-`)
       .replace(/(^-|-\$)+/g, ``);
     return slug;
-  };
+  }
   
   // helper that grabs the mdx resolver when given a string fieldname
   let mdxResolverPassthrough =
@@ -21,7 +21,7 @@ function slugify(str) {
         fieldName,
       });
       return result;
-    };
+    }
   
   const themeOptionsWithDefaults = (themeOptions) => {
     const assetPath = themeOptions.assetPath || `data/assets`;
