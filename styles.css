@@ -1,3 +1,4 @@
-html {
-  background-color: gray;
-}
+/* Example .css file with formatting and linting errors, deleting the Prettier ignore comment and then saving the file will fix them. */
+/* prettier-ignore */
+
+html        { background-color: gray}
